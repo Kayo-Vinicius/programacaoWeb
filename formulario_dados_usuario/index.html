@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulario</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Josefin+Sans:ital,wght@1,200&family=Mulish:ital,wght@0,600;1,900&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="titulo">Formulario</h1>
+	<hr>
+
+	<form method="POST" action="/dadosusuario.php">
+		<div class="dados-usuario">
+			<label for="nome"><b>Nome</b></label>
+			<input type="text" name="nome" id="nome" required>
+		</div>
+        <br>
+		<div class="dados-usuario">
+			<label><b>Sexo?</b></label>
+			<select id="sexo" name="sexo">
+				<option selected disabled value=""></option>
+				<option>Masculino</option>
+				<option>Fenminino</option>
+			</select>
+		</div>
+        <br>
+		<div class="dados-usuario">
+			<label for="idade"><b>Idade</b></label>
+			<input type="text" name="idade" id="idade" required>
+		</div>
+         <br>
+		<div class="dados-usuario">
+			<label for="cidade"><b>Cidade</b></label>
+			<input type="text" name="cidade" id="cidade" required>
+		</div>
+         <br>
+
+		<fieldset>
+			<div class="area-atuacao">
+				<label><b>Linguagens de progamação favoritos:</b></label>
+			 <br>
+				<input type="checkbox" id="tec1" name="tec1" value="HTML">
+				<label for="tec1">Java</label>
+				<input type="checkbox" id="tec2" name="tec2" value="CSS">
+				<label for="tec2">PHP</label>
+				<input type="checkbox" id="tec3" name="tec3" value="JavaScript">
+				<label for="tec3">Python</label>
+			</div>
+		</fieldset>
+
+		<div>
+			<label><b>Considerações:</b></label>
+			<textarea id="descricao" name="descricao"></textarea>
+		</div>
+
+	
+		<button onclick="imprimir()">Enviar</button>
+		
+		
+	</form>
+    <script src="script.js" defer></script>
+  </body>
+</html>

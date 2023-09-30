@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulario</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Josefin+Sans:ital,wght@1,200&family=Mulish:ital,wght@0,600;1,900&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="titulo">Vaga de Emprego</h1>
+	<hr>
+
+	<form method="POST" action="/dadosusuario.php">
+		<div class="dados-usuario">
+			<label for="nome"><b>Nome</b></label>
+			<input type="text" name="nome" id="nome" required>
+		</div>
+        <br>
+		<div class="dados-usuario">
+			<label><b>Qual o seu sexo?</b></label>
+			<select id="sexo" name="sexo">
+				<option selected disabled value=""></option>
+				<option>Masculino</option>
+				<option>Fenminino</option>
+			</select>
+		</div>
+        <br>
+		<div class="dados-usuario">
+			<label for="telefone"><b>Telefone</b></label>
+			<input type="text" name="telefone" id="telefone" required>
+		</div>
+         <br>
+		<div class="dados-usuario">
+			<label for="data-nasc"><b>Data de Nascimento:</b></label>
+			<input type="date" name="data-nas" id="data-nas" required>
+		</div>
+		 <br>
+		<div class="dados-usuario">
+			<label for="email"><b>Email</b></label>
+			<input type="email" name="email" id="email" required>
+		</div>
+         <br>
+		<div class="dados-usuario">
+			<label><b>Qual sua area de atuação?</b></label>
+			 <br>
+			<label>
+				<input type="radio" name="area-atuacao" value="frontend">Front-end
+			</label>
+			<label>
+				<input type="radio" name="area-atuacao" value="backend">Back-end
+			</label>
+			<label>
+				<input type="radio" name="area-atuacao" value="Fullstack">Fullstack
+			</label>
+		</div>
+
+		<fieldset>
+			<div class="area-atuacao">
+				<label><b>Selecione as tecnologias que utiliza:</b></label>
+			 <br>
+				<input type="checkbox" id="tec1" name="tec1" value="HTML">
+				<label for="tec1">HTML</label>
+				<input type="checkbox" id="tec2" name="tec2" value="CSS">
+				<label for="tec2">CSS</label>
+				<input type="checkbox" id="tec3" name="tec3" value="JavaScript">
+				<label for="tec3">JavaScript</label>
+				<input type="checkbox" id="tec4" name="tec4" value="Java">
+				<label for="tec4">Java</label>
+				<input type="checkbox" id="tec5" name="tec5" value="Python">
+				<label for="tec5">Python</label>
+			</div>
+		</fieldset>
+
+		
+		<input type="submit" name="submit" id="submit">
+		
+	</form>
+    <script src="script.js"></script>
+  </body>
+</html>

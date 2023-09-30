@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
+}
+#titulo{
+	color: #0A8465;
+	text-align: center;
+}
+body{
+	background-color: #05073D;
+	margin-top: 4%;
+	margin-left: 30%;
+	justify-content: center;
+	color: white;
+}
+input, select{
+	border-radius: 5px;
+}
+.dados-usuario label{
+     display: block;
+}
+fieldset .area-atuacao{
+	margin-top: 5px;
+	margin-left: 5px;
+	border-solid: none;
+}
+#submit{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 30%;
+	background-color: #1F8815;
+	width: 100px;
+	height: 30px;
+	color: white;
+	cursor: pointer;
+	border: solid 2px white;
+}
+#submit:hover{
+	background-color: #0C4407;
+}
+#sexo{
+	cursor: pointer;
+}
+#data-nas{
+	cursor: pointer;
+}
+.dados-usuario input[name="nome"]{
+	height: 20px;
+	width: 300px;
+}
+.dados-usuario input[name="email"]{
+	width: 300px;
+	height: 20px;
+}
+.dados-usuario input[name="telefone"]{
+	width: 150px;
+	height: 20px;
+}
